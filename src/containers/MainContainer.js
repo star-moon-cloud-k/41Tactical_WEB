@@ -5,7 +5,6 @@ import MainComponent from '../components/MainComponent';
 const MainContainer = () => {
   return (
     <div>
-      매인 컨테이너
       <MainComponent />
     </div>
   );
