@@ -1,21 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const ImageWrapped = styled.div`
+  width: 25%;
+`;
+const StyledImg = styled.img`
+  max-width: 100%;
+  height: auto;
+`;
+
 const MainComponent = () => {
   return (
-    <>
-      <styledImg>
-        <img src={require('../src_assets/41Tactical.png')} />
-      </styledImg>
-    </>
+    <div>
+      <ImageWrapped>
+        <StyledImg img src={require('../src_assets/41Tactical.png')} />
+        {/* <img src={require('../src_assets/41Tactical.png')} /> */}
+      </ImageWrapped>
+    </div>
   );
 };
-
-const styledImg = styled.div`
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 10rem;
-  padding-right: 10rem;
-`;
 
 export default MainComponent;
