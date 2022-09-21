@@ -1,11 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-import MainComponent from '../components/MainComponent';
+import MainComponent from '../../components/MainComponent';
+import SideComponent from '../../components/SideComponent';
 
 const MainContainer = () => {
   return (
     <div>
       <MainComponent />
+      <SideComponent />
     </div>
   );
 };
