@@ -16,17 +16,18 @@ const SideComponent = () => {
 };
 
 const SideDiv = styled.div`
-  border: 1px solid black;
-  width: 4rem;
-  /* float: left; */
+  /* border: 1px solid black; */
+  /* width: 4rem; */
+  height: 3rem;
+  float: left;
   `;
 
 const SideButton = styled.button`
-  border-radius: 1rem solid red;
+  /* border-radius: 1rem solid red; */
   padding: 0.5rem;
-  margin: 0.5rem;
-  width: 4rem;
-  height: 2rem;
+  margin: 0rem;
+  width: 6rem;
+  height: 3rem;
 
 `;
 export default SideComponent;
