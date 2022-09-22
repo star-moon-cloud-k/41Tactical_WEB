@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
 
 const TopMenu = () => {
-  const onClickLogo = () => {
-    setShow(!show);
-  };
   const [show, setShow] = useState('true');
   return (
     <SideDiv>
@@ -61,6 +57,7 @@ const SideButton = styled.button`
   font-size: 1rem;
   font: #fffdf9;
   background-color: transparent;
+  aspect-ratio: 4 / 3;
   &:hover {
     color: #0283bf;
     cursor: pointer;
