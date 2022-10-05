@@ -3,9 +3,9 @@ import MainContainer from '../containers/Main/MainContainer';
 
 const Main = () => {
   return (
-    <div>
-      <MainContainer />
-    </div>
+    <MainContainer >
+      
+      </MainContainer>
   );
 };
 
