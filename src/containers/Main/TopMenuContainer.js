@@ -1,10 +1,9 @@
 import React from 'react';
 // import MainComponent from '../../components/MainComponent';
-import TopMenu from '../../components/TopMenu';
-import SlideComponent from '../../components/utils/SlideComponent';
-import SlideRightComponent from '../../components/utils/SlideRightComponent';
+import TopMenu from '../../components/TopMenuComponent';
+
 import styled  from 'styled-components';
-const MainContainer = () => {
+const TopMenuContainer = () => {
   return (
     <div>
       {/* <MainComponent /> */}
@@ -18,4 +17,4 @@ const MainBody = styled.div`
   
 `
 
-export default MainContainer;
+export default TopMenuContainer;

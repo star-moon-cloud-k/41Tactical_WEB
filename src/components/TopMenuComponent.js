@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const TopMenu = () => {
+const TopMenuComponent = () => {
   const [show, setShow] = useState('true');
   return (
     <SideDiv>
+      <Link to="/">
       <ImageWrapped>
         <StyledImg src={require('../src_assets/41TacticalLogo.png')} />
         {/* <img src={require('../src_assets/41Tactical.png')} /> */}
       </ImageWrapped>
+      </Link>
 
-      <SideButton>회사 소개</SideButton>
+      <Link to="/overview">
+        <SideButton>회사 소개</SideButton>
+      </Link>
       <SideButton>제품 소개</SideButton>
       <SideButton>이벤트</SideButton>
       <SideButton>나머지</SideButton>
@@ -64,4 +68,4 @@ const SideButton = styled.button`
     cursor: pointer;
   }
 `;
-export default TopMenu;
+export default TopMenuComponent;

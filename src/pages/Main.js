@@ -1,12 +1,8 @@
 import React from 'react';
-import MainContainer from '../containers/Main/MainContainer';
+import TopMenuContainer from '../containers/Main/TopMenuContainer';
 
 const Main = () => {
-  return (
-    <MainContainer >
-      
-      </MainContainer>
-  );
+  return <TopMenuContainer/>;
 };
 
 export default Main;

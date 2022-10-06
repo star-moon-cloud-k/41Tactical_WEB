@@ -1,5 +1,5 @@
 import React from 'react';
-import TopMenu from '../../components/TopMenu';
+import TopMenu from '../../components/TopMenuComponent';
 import SlideComponent from '../../components/utils/SlideComponent';
 import SlideRightComponent from '../../components/utils/SlideRightComponent';
 import styled from 'styled-components';
