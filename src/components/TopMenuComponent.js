@@ -3,26 +3,34 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const TopMenuComponent = () => {
-  const [show, setShow] = useState('true');
-  return (
-    <SideDiv>
-      <Link to="/">
-      <ImageWrapped>
-        <StyledImg src={require('../src_assets/41TacticalLogo.png')} />
-        {/* <img src={require('../src_assets/41Tactical.png')} /> */}
-      </ImageWrapped>
-      </Link>
+  const [isShow, setShow] = useState('true');
 
-      <Link to="/overview">
-        <SideButton>회사 소개</SideButton>
-      </Link>
-      <SideButton>제품 소개</SideButton>
-      <SideButton>이벤트</SideButton>
-      <SideButton>나머지</SideButton>
-      <SideButton>또</SideButton>
-      <SideButton>뭐를</SideButton>
-      <SideButton>로그인</SideButton>
-    </SideDiv>
+  const toggleMenu = () => {
+    setShow((isShow) => !isShow); //on , off 토글
+    console.log(isShow);
+  };
+  return (
+    <>
+      {/* <SideButton onClick={() => toggleMenu()}>메뉴 토글</SideButton> */}
+      <SideDiv>
+        <Link to="/">
+          <ImageWrapped>
+            <StyledImg src={require('../src_assets/41TacticalLogo.png')} />
+            {/* <img src={require('../src_assets/41Tactical.png')} /> */}
+          </ImageWrapped>
+        </Link>
+
+        <Link to="/overview" className={isShow ? 'ShowMenu' : 'HideMenu'}>
+          <SideButton>회사 소개</SideButton>
+        </Link>
+        <Link to="/products">
+          <SideButton>제품 소개</SideButton>
+        </Link>
+        <Link to="/login">
+          <SideButton>로그인</SideButton>
+        </Link>
+      </SideDiv>
+    </>
   );
 };
 
@@ -44,10 +52,11 @@ const StyledImg = styled.img`
   }
 `;
 
-const SideDiv = styled.div`
+const SideDiv = styled.ul`
   border: 1px solid black;
   width: 100%;
   height: 3rem;
+
   /* float: left; */
 `;
 
